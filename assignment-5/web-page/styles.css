@@ -27,7 +27,7 @@
 }
 
 #contact {
-    color: grey;
+    color: lightgray;
 }
 
 #contact:hover {
@@ -46,7 +46,7 @@
 
 .card {
     display: flex;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 8px;
     width: 500px;
     margin-right: 30px;
