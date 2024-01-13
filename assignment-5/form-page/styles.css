@@ -1,0 +1,98 @@
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    margin: 8px;
+}
+
+.nav-bar {
+    padding: 3px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.nav-brand {
+    margin-left: 20px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items li {
+    margin-right: 25px;
+}
+
+.inactive {
+    color: lightgray;
+}
+
+.row-1 {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 20rem;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.form-card {
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 50rem;
+    padding: 10px;
+}
+
+.form-card h3 {
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-control input, textarea {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
