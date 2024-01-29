@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url("/assets/travel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+.heading {
+    margin-top: 180px;
+    margin-left: 500px;
+    font-size: 70px;
+}

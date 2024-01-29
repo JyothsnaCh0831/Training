@@ -1,17 +1,3 @@
-<!-- One Way Binding
-<h1>{{heading}}</h1>
-
-Two Way Binding
-Value of a:
-<input type="number" [(ngModel)]="a">
-<br><br>
-Value of b:
-<input type="number" [(ngModel)]="b">
-<br><br>
-<button (click)="calculate()">Calculate</button>
-<br><br>
-<h3>Result = {{result}}</h3> -->
-
 <!-- NavBar -->
 <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid">
@@ -19,36 +5,17 @@ Value of b:
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" routerLink="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Locations</a>
+                    <a class="nav-link" routerLink="/locations">Locations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" routerLink="/contact">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<!-- Displaying data using for loop -->
-<div class="container-fluid p-3">
-    <div class="row">
-        <div class="col-3" *ngFor="let location of locations">
-            <div class="card">
-                <img [src]="'./assets/' + location.image + '.jpg'" class="card-img-top" width="200px" height="300px">
-                <div class="card-body">
-                    <h3 class="card-title">{{location.place}}</h3>
-                    <p>{{location.description}}</p> 
-                    <p>
-                        <span class="fw-bold">Rating</span>&nbsp; &nbsp; {{location.rating}}
-                        <span class="bi bi-star-fill"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <router-outlet />

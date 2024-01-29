@@ -1,0 +1,45 @@
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="card p-3">
+                <div class="card-title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="card-body">
+                    <form #contactForm="ngForm">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="fName" ngModel>
+                            </div>
+                            <div class="col-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lName" ngModel>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="emailID" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailID" name="email" ngModel>
+                            </div>
+                            <div class="col-6">
+                                <label for="mobile" class="form-label">Mobile</label>
+                                <input type="text" class="form-control" id="mobile" name="mobile" ngModel>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="mesage" name="message" ngModel></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-md btn-success" (click)="onSubmitForm(contactForm)">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

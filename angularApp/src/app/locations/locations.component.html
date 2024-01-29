@@ -1,0 +1,22 @@
+<!-- Displaying data using for loop -->
+<div class="container-fluid p-3">
+    <h2>Locations</h2>
+    <div class="row">
+        <div class="col-3" *ngFor="let location of locations">
+            <div class="card">
+                <img [src]="'./assets/' + location.image + '.jpg'" class="card-img-top" width="200px" height="300px">
+                <div class="card-body">
+                    <h3 class="card-title">{{location.place}}</h3>
+                    <p>{{location.description}}</p>
+                    <p>
+                        <span class="fw-bold">Rating</span>&nbsp; &nbsp; {{location.rating}}
+                        <span class="bi bi-star-fill"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet />
+
